@@ -183,9 +183,8 @@ $ python make_annotation.py
 Public LB/Private LB: 0.658/
 
 ## 5.FINAL KERNEL
-[siim-covid19-2021](https://www.kaggle.com/nguyenbadung/siim-covid19-2021)
-
-[Demo notebook](https://github.com/dungnb1333/SIIM-COVID19-Detection/blob/main/src/demo_notebook/demo.ipynb) to visualize output of models
+[siim-covid19-2021](https://www.kaggle.com/nguyenbadung/siim-covid19-2021)\
+[demo notebook](https://github.com/dungnb1333/SIIM-COVID19-Detection/blob/main/src/demo_notebook/demo.ipynb) to visualize output of models
 
 ## 6.AWESOME RESOURCES
 [Pytorch](https://github.com/pytorch/pytorch)✨\
