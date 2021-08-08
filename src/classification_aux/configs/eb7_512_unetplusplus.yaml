@@ -1,0 +1,24 @@
+encoder_name: 'timm-efficientnet-b7'
+encoder_weights: 'noisy-student'
+in_features: 2560
+workers: 16
+
+chexpert_image_size: 512
+chexpert_batch_size: 16
+chexpert_init_lr: 0.00015
+chexpert_epochs: 10
+
+chest14_image_size: 512
+chest14_batch_size: 16
+chest14_init_lr: 0.0001
+chest14_epochs: 15
+
+aux_image_size: 512
+aux_batch_size: 14
+aux_init_lr: 0.0001
+aux_epochs: 30
+decoder: 'unetplusplus'
+decoder_channels: [256, 128, 64, 32, 16]
+aux_mixup: False
+aux_weight: 0.6
+model_ema_decay: 0.997

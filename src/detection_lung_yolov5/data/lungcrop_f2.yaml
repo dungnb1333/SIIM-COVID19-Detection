@@ -1,0 +1,8 @@
+train: ../../dataset/lung_crop/yolov5_train_fold2.txt
+val: ../../dataset/lung_crop/yolov5_valid_fold2.txt
+
+# number of classes
+nc: 1
+
+# class names
+names: ['lung']

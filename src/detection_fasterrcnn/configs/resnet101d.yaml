@@ -1,0 +1,19 @@
+backbone_name: 'resnet101d'
+in_features: 2048
+workers: 8
+
+chexpert_image_size: 512
+chexpert_batch_size: 72
+chexpert_init_lr: 0.0001
+chexpert_epochs: 10
+
+chest14_image_size: 512
+chest14_batch_size: 72
+chest14_init_lr: 0.0001
+chest14_epochs: 15
+
+aux_image_size: 1024
+aux_batch_size: 32
+aux_init_lr: 0.0001
+aux_epochs: 30
+model_ema_decay: 0.997

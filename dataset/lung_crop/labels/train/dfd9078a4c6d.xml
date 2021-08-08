@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>dfd9078a4c6d.png</filename>
+	<path>/home/dungnb/workspaces/challenges/siim-covid/dataset/train/dfd9078a4c6d.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2400</width>
+		<height>2812</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>lunga</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>150</xmin>
+			<ymin>200</ymin>
+			<xmax>2391</xmax>
+			<ymax>2191</ymax>
+		</bndbox>
+	</object>
+</annotation>

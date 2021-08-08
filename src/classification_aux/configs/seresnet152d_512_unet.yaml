@@ -1,0 +1,24 @@
+encoder_name: 'timm-seresnet152d_320'
+encoder_weights: 'imagenet'
+in_features: 2048
+workers: 16
+
+chexpert_image_size: 512
+chexpert_batch_size: 48
+chexpert_init_lr: 0.0001
+chexpert_epochs: 10
+
+chest14_image_size: 512
+chest14_batch_size: 48
+chest14_init_lr: 0.0001
+chest14_epochs: 15
+
+aux_image_size: 512
+aux_batch_size: 32
+aux_init_lr: 0.0001
+aux_epochs: 30
+decoder: 'unet'
+decoder_channels: [256, 128, 64, 32, 16]
+aux_mixup: False
+aux_weight: 0.6
+model_ema_decay: 0.997

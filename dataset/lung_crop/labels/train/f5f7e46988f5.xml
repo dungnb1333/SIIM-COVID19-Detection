@@ -1,0 +1,26 @@
+<annotation>
+	<folder>tmp</folder>
+	<filename>f5f7e46988f5.png</filename>
+	<path>/home/dungnb/workspaces/challenges/siim-covid/dataset/tmp/f5f7e46988f5.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>3032</width>
+		<height>3032</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>lunga</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>503</xmin>
+			<ymin>403</ymin>
+			<xmax>2325</xmax>
+			<ymax>1894</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,8 @@
+train: ../../dataset/siim-covid19-detection/folds/yolov5_train_fold1.txt
+val: ../../dataset/siim-covid19-detection/folds/yolov5_valid_fold1.txt
+
+# number of classes
+nc: 1
+
+# class names
+names: ['opacity']

@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0,1 python train_xray.py --cfg models/hub/yolov5x6.yaml --weights weights/yolov5x6.pt --sync-bn --data data/warmup.yaml --batch-size 48 --img-size 768 --device 0,1 --epochs 40 --name warmup --hyp data/hyp.scratch.yaml

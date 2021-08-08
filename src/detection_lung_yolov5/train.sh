@@ -1,0 +1,5 @@
+CUDA_VISIBLE_DEVICES=0,1 python train.py --cfg models/yolov5x.yaml --weights weights/yolov5x.pt --sync-bn --data data/lungcrop_f0.yaml --batch-size 128 --img-size 512 --device 0,1 --epochs 20 --name fold0
+CUDA_VISIBLE_DEVICES=0,1 python train.py --cfg models/yolov5x.yaml --weights weights/yolov5x.pt --sync-bn --data data/lungcrop_f1.yaml --batch-size 128 --img-size 512 --device 0,1 --epochs 20 --name fold1
+CUDA_VISIBLE_DEVICES=0,1 python train.py --cfg models/yolov5x.yaml --weights weights/yolov5x.pt --sync-bn --data data/lungcrop_f2.yaml --batch-size 128 --img-size 512 --device 0,1 --epochs 20 --name fold2
+CUDA_VISIBLE_DEVICES=0,1 python train.py --cfg models/yolov5x.yaml --weights weights/yolov5x.pt --sync-bn --data data/lungcrop_f3.yaml --batch-size 128 --img-size 512 --device 0,1 --epochs 20 --name fold3
+CUDA_VISIBLE_DEVICES=0,1 python train.py --cfg models/yolov5x.yaml --weights weights/yolov5x.pt --sync-bn --data data/lungcrop_f4.yaml --batch-size 128 --img-size 512 --device 0,1 --epochs 20 --name fold4

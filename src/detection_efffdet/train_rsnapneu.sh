@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0,1 ./distributed_train_rsnapneu.sh 2 ../../dataset --model tf_efficientdet_d7 --dataset rsnapneu --amp --lr .008 --sync-bn --opt momentum --warmup-epochs 3 --model-ema --model-ema-decay 0.9966 --epochs 15 --num-classes 1 --pretrained --native-amp -b 8 --image-size 768
