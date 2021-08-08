@@ -2,7 +2,7 @@
 
 ![Alt text](./images/header.png?raw=true "Optional Title")
 
-Source code of the 1st place solution for [SIIM-FISABIO-RSNA COVID-19 Detection Challenge](https://www.kaggle.com/c/siim-covid19-detection/overview). For issues running this repo please visit [GitHub Issues](https://github.com/dungnb1333/SIIM-COVID19-Detection/issues).
+Source code of the 1st place solution for [SIIM-FISABIO-RSNA COVID-19 Detection Challenge](https://www.kaggle.com/c/siim-covid19-detection/overview).
 
 ## 1.INSTALLATION
 - Ubuntu 18.04.5 LTS
