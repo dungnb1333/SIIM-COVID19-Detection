@@ -1,8 +1,6 @@
 # SIIM-COVID19-Detection
 
-<p align="center">
-  <img src="https://storage.googleapis.com/kaggle-competitions/kaggle/26680/logos/header.png">
-</p>
+![Alt text](./images/header.png?raw=true "Optional Title")
 
 Source code of the 1st place solution for [SIIM-FISABIO-RSNA COVID-19 Detection Challenge](https://www.kaggle.com/c/siim-covid19-detection/overview). For issues running this repo please visit [GitHub Issues]().
 
