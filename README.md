@@ -2,14 +2,7 @@
 
 ![Alt text](./images/header.png?raw=true "Optional Title")
 
-Source code of the 1st place solution for [SIIM-FISABIO-RSNA COVID-19 Detection Challenge](https://www.kaggle.com/c/siim-covid19-detection/overview). For issues running this repo please visit [GitHub Issues]().
-
-- [INSTALLATION](#1.INSTALLATION)
-- [DATASET](#2.DATASET)
-- [SOLUTION SUMMARY](#3.SOLUTION-SUMMARY)
-- [TRAIN MODEL](#4.TRAIN-MODEL)
-- [FINAL KERNEL](#5.FINAL-KERNEL)
-- [AWESOME RESOURCES](#6.AWESOME-RESOURCES)
+Source code of the 1st place solution for [SIIM-FISABIO-RSNA COVID-19 Detection Challenge](https://www.kaggle.com/c/siim-covid19-detection/overview). For issues running this repo please visit [GitHub Issues](https://github.com/dungnb1333/SIIM-COVID19-Detection/issues).
 
 ## 1.INSTALLATION
 - Ubuntu 18.04.5 LTS
@@ -43,7 +36,7 @@ $ python prepare_siim_lung_crop_annotation.py
 - download chexpert high-resolution dataset at [link](https://stanfordmlgroup.github.io/competitions/chexpert/) or then extract to ./dataset/external_dataset/chexpert/train
 - download padchest dataset at [link](https://bimcv.cipf.es/bimcv-projects/padchest/) or then extract to ./dataset/external_dataset/padchest/images
 
-*<sub>most of the images in bimcv and ricord overlap with siim covid trainset and testset so I didn't use them, avoid data-leak when training. You can use [script]()<sub>*
+*<sub>most of the images in bimcv and ricord overlap with siim covid trainset and testset so I didn't use them, avoid data-leak when training. You can use [script](https://github.com/dungnb1333/SIIM-COVID19-Detection/blob/main/src/prepare/check_bimcv_ricord_dup.py)<sub>*
 ```
 $ cd src/prepare
 $ python dicom2image_pneumothorax.py
@@ -174,6 +167,7 @@ $ CUDA_VISIBLE_DEVICES=0 python train_final.py --cfg configs/resnet101d.yaml
 ```
 #### 4.2.4 Ensembling + Pseudo labeling
 Keep images that meet the conditions: negative prediction < 0.3 and maximum of (typical, indeterminate, atypical) predicion > 0.7. Then choose 2 boxes with the highest confidence as pseudo labels for each image.
+
 *<sub>Note: This step requires at least 128 GB of RAM <sub>*
 ```
 $ cd ./src/detection_make_pseudo
@@ -190,14 +184,15 @@ Public LB/Private LB: 0.658/
 
 ## 5.FINAL KERNEL
 [siim-covid19-2021](https://www.kaggle.com/nguyenbadung/siim-covid19-2021)
-[Demo]() to visualize output of models
+
+[Demo notebook](https://github.com/dungnb1333/SIIM-COVID19-Detection/blob/main/src/demo_notebook/demo.ipynb) to visualize output of models
 
 ## 6.AWESOME RESOURCES
-[Pytorch](https://github.com/pytorch/pytorch)✨
-[PyTorch Image Models](https://github.com/rwightman/pytorch-image-models)✨
-[Segmentation models](https://github.com/qubvel/segmentation_models.pytorch)✨
-[EfficientDet](https://github.com/rwightman/efficientdet-pytorch)✨
-[YoloV5](https://github.com/ultralytics/yolov5)✨
-[FasterRCNN FPN](https://github.com/pytorch/vision/tree/master/torchvision/models/detection)✨
-[Albumentations](https://github.com/albumentations-team/albumentations)✨
-[Weighted boxes fusion](https://github.com/ZFTurbo/Weighted-Boxes-Fusion)✨
+[Pytorch](https://github.com/pytorch/pytorch)✨\
+[PyTorch Image Models](https://github.com/rwightman/pytorch-image-models)✨\
+[Segmentation models](https://github.com/qubvel/segmentation_models.pytorch)✨\
+[EfficientDet](https://github.com/rwightman/efficientdet-pytorch)✨\
+[YoloV5](https://github.com/ultralytics/yolov5)✨\
+[FasterRCNN FPN](https://github.com/pytorch/vision/tree/master/torchvision/models/detection)✨\
+[Albumentations](https://github.com/albumentations-team/albumentations)✨\
+[Weighted boxes fusion](https://github.com/ZFTurbo/Weighted-Boxes-Fusion)✨\
