@@ -46,7 +46,7 @@ $ python prepare_vinbigdata.py
 $ python refine_data.py                       # remove unused file in chexpert + chest14 + padchest dataset
 $ python resize_padchest_pneumothorax.py
 ```
-
+dataset structure should be [./dataset/dataset_structure.txt](https://github.com/dungnb1333/SIIM-COVID19-Detection/blob/main/dataset/dataset_structure.txt)
 ## 3.SOLUTION SUMMARY
 ![Alt text](./images/flowchart.png?raw=true "Optional Title")
 
