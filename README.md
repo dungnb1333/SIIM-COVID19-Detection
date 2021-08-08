@@ -193,4 +193,4 @@ Public LB/Private LB: 0.658/
 [YoloV5](https://github.com/ultralytics/yolov5)✨\
 [FasterRCNN FPN](https://github.com/pytorch/vision/tree/master/torchvision/models/detection)✨\
 [Albumentations](https://github.com/albumentations-team/albumentations)✨\
-[Weighted boxes fusion](https://github.com/ZFTurbo/Weighted-Boxes-Fusion)✨\
+[Weighted boxes fusion](https://github.com/ZFTurbo/Weighted-Boxes-Fusion)✨
