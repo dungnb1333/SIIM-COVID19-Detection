@@ -75,11 +75,11 @@ dataset
 │   │       ├── 000a312787f2.xml
 │   │       ├── *.txt
 │   │       ├── *.xml
-    ├── images
-    │   ├── test
-    │   └── train
-    │       ├── 000a312787f2.png
-    │       ├── *.png
+│   ├── images
+│   │   ├── test
+│   │   └── train
+│   │       ├── 000a312787f2.png
+│   │       ├── *.png
 │   ├── yolov5_train_fold*.txt
 └── siim-covid19-detection
     ├── folds
