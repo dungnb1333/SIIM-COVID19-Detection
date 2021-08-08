@@ -34,8 +34,7 @@ $ python prepare_siim_lung_crop_annotation.py
 - download vinbigdata dataset at [link](https://www.kaggle.com/c/vinbigdata-chest-xray-abnormalities-detection/data) then extract to ./dataset/external_dataset/vinbigdata/dicoms
 - download chest14 dataset at [link](https://nihcc.app.box.com/v/ChestXray-NIHCC) then extract to ./dataset/external_dataset/chest14/images
 - download chexpert high-resolution dataset at [link](https://stanfordmlgroup.github.io/competitions/chexpert/) or then extract to ./dataset/external_dataset/chexpert/train
-- download padchest dataset at [link](https://bimcv.cipf.es/bimcv-projects/padchest/) or then extract to ./dataset/external_dataset/padchest/images
-
+- download padchest dataset at [link](https://bimcv.cipf.es/bimcv-projects/padchest/) or then extract to ./dataset/external_dataset/padchest/images\
 *<sub>most of the images in bimcv and ricord overlap with siim covid trainset and testset so I didn't use them, avoid data-leak when training. You can use [script](https://github.com/dungnb1333/SIIM-COVID19-Detection/blob/main/src/prepare/check_bimcv_ricord_dup.py)<sub>*
 ```
 $ cd src/prepare
@@ -61,8 +60,8 @@ $ bash train_chexpert_chest14.sh              #Pretrain backbone on chexpert + c
 $ bash train_rsnapneu.sh                      #Pretrain rsna_pneumonia
 $ bash train_siim.sh                          #Train siim covid19
 ```
-- Stage2: Generate soft-label for classification head and mask for segmentation head. 
-Output: soft-label in ./pseudo_csv/[source].csv and public test masks in ./prediction_mask/public_test/masks
+- Stage2: Generate soft-label for classification head and mask for segmentation head.\
+  Output: soft-label in ./pseudo_csv/[source].csv and public test masks in ./prediction_mask/public_test/masks
 ```
 $ bash generate_pseudo_label.sh [checkpoints_dir]
 ```
