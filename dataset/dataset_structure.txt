@@ -1,0 +1,107 @@
+dataset
+├── external_dataset
+│   ├── chest14
+│   │   └── images
+│   │       ├── 00000001_000.png
+│   │       ├── *.png
+│   ├── chexpert
+│   │   └── train
+│   │       ├── patient00001
+│   │       │   └── study1
+│   │       │       └── view1_frontal.jpg
+│   │       ├── patient*
+│   ├── ext_csv
+│   │   ├── chest14_train.csv
+│   │   ├── chest14_valid.csv
+│   │   ├── chexpert_train.csv
+│   │   ├── chexpert_valid.csv
+│   │   ├── padchest.csv
+│   │   ├── pneumothorax.csv
+│   │   ├── rsna_pneumonia.csv
+│   │   ├── rsna_pneumonia_effdet_train.txt
+│   │   ├── rsna_pneumonia_effdet_valid.txt
+│   │   ├── rsnapneumonia_train.csv
+│   │   ├── rsnapneumonia_valid.csv
+│   │   ├── rsna_pneumonia_yolov5_train.txt
+│   │   ├── rsna_pneumonia_yolov5_valid.txt
+│   │   └── vin.csv
+│   ├── padchest
+│   │   └── images
+│   │       ├── 100016903621660259605956393388617381387_0db6uc.png
+│   │       ├── *.png
+│   ├── pneumothorax
+│   │   ├── dicoms
+│   │   │   ├── dicom-images-test
+│   │   │   ├── dicom-images-train
+│   │   └── images
+│   │       ├── 1.2.276.0.7230010.3.1.4.8323329.10000.1517875220.938530.png
+│   │       ├── *.png
+│   ├── rsna-pneumonia-detection-challenge
+│   │   ├── dicoms
+│   │   │   ├── stage_2_test_images
+│   │   │   │   ├── 0000a175-0e68-4ca4-b1af-167204a7e0bc.dcm
+│   │   │   │   ├── *.dcm
+│   │   │   ├── stage_2_train_images
+│   │   │   │   ├── 0004cfab-14fd-4e49-80ba-63a80b6bddd6.dcm
+│   │   │   │   ├── *.dcm
+│   │   │   ├── stage_2_sample_submission.csv
+|   |   │   ├── stage_2_train_labels.csv
+|   |   │   └── tage_2_detailed_class_info.csv
+│   │   ├── images
+│   │   │   ├── test
+│   │   │   │   ├── 0000a175-0e68-4ca4-b1af-167204a7e0bc.png
+│   │   │   │   ├── *.png
+│   │   │   └── train
+│   │   │       ├── 0004cfab-14fd-4e49-80ba-63a80b6bddd6.png
+│   │   │       ├── *.png
+│   │   └── labels
+│   │       └── train
+│   │           ├── 000db696-cf54-4385-b10b-6b16fbb3f985.txt
+│   │           ├── 000db696-cf54-4385-b10b-6b16fbb3f985.xml
+│   │           ├── *.txt
+│   │           ├── *.xml
+│   └── vinbigdata
+│       ├── dicoms
+|       |   ├── train 
+│       |       ├── 000434271f63a053c4128a0ba6352c7f.dicom
+│       |       ├── *.dicom
+│       └── images
+│           ├── 000434271f63a053c4128a0ba6352c7f.png
+│           ├── *.png
+├── lung_crop
+│   ├── labels
+│   │   └── train
+│   │       ├── 000a312787f2.txt
+│   │       ├── 000a312787f2.xml
+│   │       ├── *.txt
+│   │       ├── *.xml
+│   ├── yolov5_train_fold*.txt
+└── siim-covid19-detection
+    ├── folds
+    │   ├── effdet_train_fold*.txt
+    │   ├── yolov5_train_fold*.txt
+    ├── test
+    │   ├── 00188a671292
+    │   ├── *
+    ├── train
+    │   ├── 00086460a852
+    │   ├── *
+    ├── images
+    │   ├── test
+    │   │   ├── 0026720152f5.png
+    │   │   ├── *.png
+    │   └── train
+    │       ├── 000a312787f2.png
+    │       ├── *.png
+    ├── labels
+    │   └── train
+    │       ├── 000a312787f2.txt
+    │       ├── 000a312787f2.xml
+    │       ├── *.txt
+    │       ├── *.xml
+    ├── sample_submission.csv
+    ├── test_meta.csv
+    ├── train_image_level.csv
+    ├── train_kfold.csv
+    ├── train_meta.csv
+    └── train_study_level.csv

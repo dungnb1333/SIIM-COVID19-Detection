@@ -29,7 +29,7 @@ $ cp -r ../../dataset/siim-covid19-detection/images ../../dataset/lung_crop/.
 $ python prepare_siim_lung_crop_annotation.py
 ```
 #### 2.2 EXTERNAL DATASET
-- download pneumothorax dataset at [link](https://www.kaggle.com/c/siim-acr-pneumothorax-segmentation/data) then extract to ./dataset/external_dataset/pneumothorax/dicoms
+- download pneumothorax dataset at [link](https://www.kaggle.com/seesee/siim-train-test) then extract to ./dataset/external_dataset/pneumothorax/dicoms
 - download pneumonia dataset at [link](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge/data) then extract to ./dataset/external_dataset/rsna-pneumonia-detection-challenge/dicoms
 - download vinbigdata dataset at [link](https://www.kaggle.com/c/vinbigdata-chest-xray-abnormalities-detection/data) then extract to ./dataset/external_dataset/vinbigdata/dicoms
 - download chest14 dataset at [link](https://nihcc.app.box.com/v/ChestXray-NIHCC) then extract to ./dataset/external_dataset/chest14/images
