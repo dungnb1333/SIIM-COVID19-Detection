@@ -182,7 +182,7 @@ $ python make_annotation.py
 **Final result**: Public LB/Private LB: 0.658/0.635
 
 ## 5.FINAL KERNEL
-[siim-covid19-2021](https://www.kaggle.com/nguyenbadung/siim-covid19-2021)\
+[siim-covid19-2021](https://www.kaggle.com/nguyenbadung/siim-covid19-2021?scriptVersionId=69474844)\
 [demo notebook](https://github.com/dungnb1333/SIIM-COVID19-Detection/blob/main/src/demo_notebook/demo.ipynb) to visualize output of models
 
 ## 6.AWESOME RESOURCES
