@@ -87,7 +87,7 @@ mAP@0.5 4 classes: negative, typical, indeterminate, atypical
 *<sub>8TTA: (orig, center-crop 80%)x(None, hflip, vflip, hflip & vflip). In [final submission](https://www.kaggle.com/nguyenbadung/siim-covid19-2021), I use 4.1.2 lung detector instead of center-crop 80%<sub>*
 
 #### 4.1.2 Lung Detector-YoloV5
-I annotated the train data(6334 images) and built a lung localizer with the bboxes. I noticed that increasing input image size improves the modeling performance and lung detector helps the model to reduce background noise.
+I annotated the train data(6334 images) using [LabelImg](https://github.com/tzutalin/labelImg) and built a lung localizer. I noticed that increasing input image size improves the modeling performance and lung detector helps the model to reduce background noise.
 ```
 $ cd src/detection_lung_yolov5
 $ cd weights && bash download_coco_weights.sh && cd ..
