@@ -75,7 +75,7 @@ Rounds of pseudo labeling (stage2) and retraining (stage3) were repeated until t
 $ bash generate_pseudo_label.sh checkpoints_v3
 $ bash train_pseudo.sh checkpoints_v3 checkpoints_v4
 ```
-- For evaluate model
+- For evaluation
 ```
 $ CUDA_VISIBLE_DEVICES=0 python evaluate.py --cfg configs/xxx.yaml --num_tta xxx
 ```
