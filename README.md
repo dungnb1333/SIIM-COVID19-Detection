@@ -174,12 +174,12 @@ $ python make_pseudo.py
 $ python make_annotation.py            
 ```
 
-#### 4.2.5 Performance
+#### 4.2.5 Detection Performance
 |                  | YoloV5x6 768 | EffdetD7 768 | F-RCNN R200 768 | F-RCNN R101 1024 |
 | :--------------- | :----------- | :----------- | :-------------- | :--------------- |
 | mAP@0.5 TTA      | 0.580        | 0.594        | 0.592           | 0.596            |
 
-Public LB/Private LB: 0.658/
+**Final result**: Public LB/Private LB: 0.658/0.635
 
 ## 5.FINAL KERNEL
 [siim-covid19-2021](https://www.kaggle.com/nguyenbadung/siim-covid19-2021)\
