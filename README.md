@@ -8,7 +8,7 @@ Source code of the 1st place solution for [SIIM-FISABIO-RSNA COVID-19 Detection 
 - Ubuntu 18.04.5 LTS
 - CUDA 10.2
 - Python 3.7.9
-- python packages are detailed separately in requirements.txt
+- python packages are detailed separately in [requirements](https://github.com/dungnb1333/SIIM-COVID19-Detection/blob/main/requirements.txt)
 ```
 $ conda create -n envs python=3.7.9
 $ conda activate envs
