@@ -70,7 +70,7 @@ $ bash generate_pseudo_label.sh [checkpoints_dir]
 $ bash train_pseudo.sh [previous_checkpoints_dir] [new_checkpoints_dir]
 ```
 Rounds of pseudo labeling (stage2) and retraining (stage3) were repeated until the score on public LB didn't improve.
-- For final submission
+- For final checkpoints
 ```
 $ bash generate_pseudo_label.sh checkpoints_v3
 $ bash train_pseudo.sh checkpoints_v3 checkpoints_v4
@@ -181,7 +181,7 @@ $ python make_annotation.py
 
 **Final result**: Public LB/Private LB: 0.658/0.635
 
-## 5.FINAL KERNEL
+## 5.FINAL SUBMISSION
 [siim-covid19-2021](https://www.kaggle.com/nguyenbadung/siim-covid19-2021?scriptVersionId=69474844)\
 [demo notebook](https://github.com/dungnb1333/SIIM-COVID19-Detection/blob/main/src/demo_notebook/demo.ipynb) to visualize output of models
 
