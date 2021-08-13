@@ -33,9 +33,9 @@ $ python prepare_siim_lung_crop_annotation.py
 - download pneumonia dataset at [link](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge/data) then extract to ./dataset/external_dataset/rsna-pneumonia-detection-challenge/dicoms
 - download vinbigdata dataset at [link](https://www.kaggle.com/c/vinbigdata-chest-xray-abnormalities-detection/data) then extract to ./dataset/external_dataset/vinbigdata/dicoms
 - download chest14 dataset at [link](https://nihcc.app.box.com/v/ChestXray-NIHCC) then extract to ./dataset/external_dataset/chest14/images
-- download chexpert high-resolution dataset at [link](https://stanfordmlgroup.github.io/competitions/chexpert/) or then extract to ./dataset/external_dataset/chexpert/train
-- download padchest dataset at [link](https://bimcv.cipf.es/bimcv-projects/padchest/) or then extract to ./dataset/external_dataset/padchest/images\
-*<sub>most of the images in bimcv and ricord duplicate with siim covid trainset and testset. To avoid data-leak when training, I didn't use them. You can use [script](https://github.com/dungnb1333/SIIM-COVID19-Detection/blob/main/src/prepare/check_bimcv_ricord_dup.py)<sub>*
+- download chexpert high-resolution dataset at [link](https://stanfordmlgroup.github.io/competitions/chexpert/) then extract to ./dataset/external_dataset/chexpert/train
+- download padchest dataset at [link](https://bimcv.cipf.es/bimcv-projects/padchest/) then extract to ./dataset/external_dataset/padchest/images\
+*<sub>most of the images in bimcv and ricord duplicate with siim covid trainset and testset. To avoid data-leak when training, I didn't use them. You can use script [src/prepare/check_bimcv_ricord_dup.py](https://github.com/dungnb1333/SIIM-COVID19-Detection/blob/main/src/prepare/check_bimcv_ricord_dup.py)<sub>*
 ```
 $ cd src/prepare
 $ python dicom2image_pneumothorax.py
