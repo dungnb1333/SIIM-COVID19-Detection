@@ -180,10 +180,8 @@ $ python make_annotation.py
 | :--------------- | :----------- | :----------- | :-------------- | :--------------- |
 | mAP@0.5 TTA      | 0.580        | 0.594        | 0.592           | 0.596            |
 
-**Final result**: Public LB/Private LB: 0.658/0.635
-
 ## 5.FINAL SUBMISSION
-[siim-covid19-2021](https://www.kaggle.com/nguyenbadung/siim-covid19-2021?scriptVersionId=69474844)\
+[siim-covid19-2021](https://www.kaggle.com/nguyenbadung/siim-covid19-2021?scriptVersionId=69474844) Public LB: 0.658 / Private LB: 0.635\
 [demo notebook](https://github.com/dungnb1333/SIIM-COVID19-Detection/blob/main/src/demo_notebook/demo.ipynb) to visualize output of models
 
 ## 6.AWESOME RESOURCES
