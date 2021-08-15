@@ -81,13 +81,13 @@ $ bash train_pseudo.sh checkpoints_v3 checkpoints_v4
 $ CUDA_VISIBLE_DEVICES=0 python evaluate.py --cfg configs/xxx.yaml --num_tta xxx
 ```
 mAP@0.5 4 classes: negative, typical, indeterminate, atypical
-|              | SeR152-Unet | EB5-Deeplab | EB6-Linknet | EB7-Unet++  | Ensemble    |
+|              | [SeR152-Unet](https://github.com/dungnb1333/SIIM-COVID19-Detection/releases/download/v0.1/classification-timm-seresnet152d_320_512_unet_aux.zip) | [EB5-Deeplab](https://github.com/dungnb1333/SIIM-COVID19-Detection/releases/download/v0.1/classification-timm-efficientnet-b5_512_deeplabv3plus_aux.zip) | [EB6-Linknet](https://github.com/dungnb1333/SIIM-COVID19-Detection/releases/download/v0.1/classification-timm-efficientnet-b6_448_linknet_aux.zip) | [EB7-Unet++](https://github.com/dungnb1333/SIIM-COVID19-Detection/releases/download/v0.1/classification-timm-efficientnet-b7_512_unetplusplus_aux.zip)  | Ensemble    |
 | :----------- | :---------- | :---------- | :---------- | :---------- | :---------- |
 | w/o TTA/8TTA | 0.575/0.584 | 0.583/0.592 | 0.580/0.587 | 0.589/0.595 | 0.595/0.598 |
 
 *<sub>8TTA: (orig, center-crop 80%)x(None, hflip, vflip, hflip & vflip). In [final submission](https://www.kaggle.com/nguyenbadung/siim-covid19-2021), I use 4.1.2 lung detector instead of center-crop 80%<sub>*
 
-#### 4.1.2 Lung Detector-YoloV5
+#### 4.1.2 [Lung Detector-YoloV5](https://github.com/dungnb1333/SIIM-COVID19-Detection/releases/download/v0.1/detection_yolov5_lung.zip)
 I annotated the train data(6334 images) using [LabelImg](https://github.com/tzutalin/labelImg) and built a lung localizer. I noticed that increasing input image size improves the modeling performance and lung detector helps the model to reduce background noise.
 ```
 $ cd src/detection_lung_yolov5
@@ -176,7 +176,7 @@ $ python make_annotation.py
 ```
 
 #### 4.2.5 Detection Performance
-|                  | YoloV5x6 768 | EffdetD7 768 | F-RCNN R200 768 | F-RCNN R101 1024 |
+|                  | [YoloV5x6 768](https://github.com/dungnb1333/SIIM-COVID19-Detection/releases/download/v0.1/detection_yolov5.zip) | [EffdetD7 768](https://github.com/dungnb1333/SIIM-COVID19-Detection/releases/download/v0.1/detection_efficientdet.zip) | [F-RCNN R200 768](https://github.com/dungnb1333/SIIM-COVID19-Detection/releases/download/v0.1/detection_fasterrcnn_resnet200d_768.zip) | [F-RCNN R101 1024](https://github.com/dungnb1333/SIIM-COVID19-Detection/releases/download/v0.1/detection_fasterrcnn_resnet101d_1024.zip) |
 | :--------------- | :----------- | :----------- | :-------------- | :--------------- |
 | mAP@0.5 TTA      | 0.580        | 0.594        | 0.592           | 0.596            |
 
