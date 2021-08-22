@@ -5,6 +5,7 @@
 Source code of the 1st place solution for [SIIM-FISABIO-RSNA COVID-19 Detection Challenge](https://www.kaggle.com/c/siim-covid19-detection/overview).
 
 ## 1.INSTALLATION
+- HARDWARE: 4 x NVIDIA TESLA V100 32G GPU, 64 vCPUs, 256GB RAM
 - Ubuntu 18.04.5 LTS
 - CUDA 10.2
 - Python 3.7.9
@@ -25,7 +26,7 @@ $ pip install git+https://github.com/bes-dev/mean_average_precision.git@930df361
 $ cd src/prepare
 $ python dicom2image_siim.py
 $ python kfold_split.py
-$ prepare_siim_annotation.py                        # effdet and yolo format
+$ python prepare_siim_annotation.py                        # effdet and yolo format
 $ cp -r ../../dataset/siim-covid19-detection/images ../../dataset/lung_crop/.
 $ python prepare_siim_lung_crop_annotation.py
 ```
